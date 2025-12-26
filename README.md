@@ -26,7 +26,7 @@ console.log(mixed.text, '→', mixed.answer);
 
 // Missing-operand (reverse) question example
 // For deterministic transformation, import the helper and a RNG
-import { makeMissingOperandQuestion, makeRng } from '@kids/math-generator';
+import { makeMissingOperandQuestion, makeRng } from 'kids-math-generator';
 
 const base = generateQuestion({ grade: 6, operation: 'add', difficulty: 'hard', seed: 7 });
 const rng = makeRng(1); // deterministic helper RNG
