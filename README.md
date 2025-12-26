@@ -1,4 +1,4 @@
-# @kids/math-generator
+# kids-math-generator
 
 A small TypeScript package to generate math questions for grades 1–6.
 
@@ -14,7 +14,7 @@ Key features
 Quick usage (ESM):
 
 ```ts
-import { generateQuestion } from '@kids/math-generator';
+import { generateQuestion } from 'kids-math-generator';
 
 // Explicit multiplication question
 const q1 = generateQuestion({ grade: 3, operation: 'mul', difficulty: 'easy', seed: 42 });
