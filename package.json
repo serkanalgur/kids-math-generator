@@ -1,0 +1,27 @@
+{
+    "name": "@kids/math-generator",
+    "version": "0.1.0",
+    "description": "Math question generator for grades 1-6",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "test": "node dist/test/index.js",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0",
+        "@types/node": "^25.0.3"
+    },
+    "license": "MIT"
+}
